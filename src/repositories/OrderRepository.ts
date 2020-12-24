@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { getMongoRepository, MongoRepository } from 'typeorm';
 import { IDeal } from '../DTOS/IDeal';
 import { IOrder } from '../DTOS/IOrder';
@@ -9,7 +10,7 @@ export default class OrderRepository implements IOrderRepository {
   private ormRepository: MongoRepository<Order>;
 
   constructor() {
-    this.ormRepository = getMongoRepository(Order, 'default');
+    this.ormRepository = getMongoRepository(Order);
   }
 
   public async create({
