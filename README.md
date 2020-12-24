@@ -108,11 +108,6 @@ With this command you will send a request to get all the orders saved in MongoDB
 The response will be an array of orders.
 
 
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 
 Made by Bruno Alarcão 👋 &nbsp;[See my linkedin](https://www.linkedin.com/in/bruno-alarc%C3%A3o-271253103/)
