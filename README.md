@@ -59,6 +59,15 @@ Technologies that I used to develop this api
 $ git clone https://github.com/brualarcao/linkapi-challenge-integration.git && cd linkapi-challenge-integration
 ```
 
+**Follow the steps below to configure your .env**
+
+```bash
+API_KEY_PIPE=YOUR API_KEY_PIPE_HERE
+API_KEY_BLING=YOUR_API_KEY_BLING_HERE
+MONGO_URL=YOUR_MONGODB_URL_HERE
+
+```
+
 **Follow the steps below for install the dependencies**
 
 ```bash
@@ -72,15 +81,6 @@ $ yarn run
 # Well done, project is started!
 ```
 
-
-**Follow the steps below to configure your .env**
-
-```bash
-API_KEY_PIPE=YOUR API_KEY_PIPE_HERE
-API_KEY_BLING=YOUR_API_KEY_BLING_HERE
-MONGO_URL=YOUR_MONGODB_URL_HERE
-
-```
 
 <div id="use"></div>
 ## Use
