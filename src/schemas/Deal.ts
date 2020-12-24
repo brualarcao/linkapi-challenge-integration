@@ -1,30 +1,36 @@
-import { Entity, ObjectID, ObjetcIdColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm'
+import { Entity, ObjectID, Column, CreateDateColumn, UpdateDateColumn, PrimaryColumn } from 'typeorm'
 
 @Entity('deals')
 export class Deal {
 
-  @ObjetcIdColumn()
-  id: ObjectID
+ @PrimaryColumn()
+ deal_id: number
 
-  @Column()
-  deal_id: number
+ @Column()
+ owner_name: string
 
-  @Column()
-  title: string
+ @Column()
+ contact: string
 
-  @Column()
-  org_name: string
+ @Column()
+ won_time: string
 
-  @Column()
-  value: number
+ @Column()
+ contact_email: string
 
-  @Column()
-  cc_email: string
+ @Column()
+ contact_phone: string
 
-  @CreateDateColumn()
-  created_at: string
+ @Column()
+ title: string
 
-  @UpdateDateColumn()
-  updated_at: string
+ @Column()
+ org_name: string;
+
+ @Column()
+ value: number;
+
+ @Column()
+ cc_email: string
 
 }

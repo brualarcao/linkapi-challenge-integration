@@ -1,17 +1,16 @@
-import express from 'express'
-import "reflect-metadata"
-import bodyParser from 'body-parser'
-import MakeOrderController from './controllers/MakeOrderController'
+import express from 'express';
+import 'reflect-metadata';
+import bodyParser from 'body-parser';
+import 'dotenv/config';
 
-import './connection'
+import './connection';
+import routes from './routes/index.routes';
 
-const makeOrder = new MakeOrderController()
+const app = express();
 
-const app = express()
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-app.use(bodyParser.urlencoded({ extended:false }))
-app.use(bodyParser.json())
+app.use(routes);
 
-app.get('/order', makeOrder.create)
-
-app.listen(3333)
+app.listen(3333);

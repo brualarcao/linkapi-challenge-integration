@@ -11,13 +11,13 @@
     "js2xmlparser": "^4.0.1",
     "moment": "^2.29.1",
     "mongodb": "^3.6.3",
+    "mysql": "^2.18.1",
     "reflect-metadata": "^0.1.13",
     "ts-node": "^9.1.1",
     "typeorm": "^0.2.29"
   },
   "scripts": {
-    "build": "tsc",
-    "dev:server": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts"
+    "run": "ts-node-dev --transpile-only --inspect --ignore-watch node_modules --respawn src/server.ts"
   },
   "devDependencies": {
     "@types/express": "^4.17.9",

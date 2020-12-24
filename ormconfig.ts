@@ -1,6 +1,9 @@
-{
+import 'dotenv/config'
+
+
+export = {
   "type": "mongodb",
-  "url": "mongodb+srv://linkapi:mongodb@cluster0.umzkk.mongodb.net/integrationdb?retryWrites=true&w=majority",
+  "url": process.env.MONGO_URL,
   "useNewUrlParser": true,
   "synchronize": true,
   "useUnifiedTopology": true,
