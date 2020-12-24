@@ -1,12 +1,17 @@
 import express from 'express'
-import routes from './routes'
+import "reflect-metadata"
+import bodyParser from 'body-parser'
+import MakeOrderController from './controllers/MakeOrderController'
+
+import './connection'
+
+const makeOrder = new MakeOrderController()
 
 const app = express()
 
-app.get('/', (req, res) => {
-  return res.json({ message: 'Hello LinkApi!' })
-})
+app.use(bodyParser.urlencoded({ extended:false }))
+app.use(bodyParser.json())
 
-app.listen(3333, () => {
-  console.log('Server Started on port 3333!')
-})
+app.get('/order', makeOrder.create)
+
+app.listen(3333)
