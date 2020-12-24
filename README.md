@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Test for Back-end Developer at LinkApi
+  Challenge for Back-end Developer at LinkApi
 </h3>
 
 
