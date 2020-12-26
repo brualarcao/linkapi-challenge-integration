@@ -1,4 +1,5 @@
-export interface IDeal { // Data Transfer Object do Deal
+export interface IDeal {
+  // Data Transfer Object do Deal
   deal_id: number;
   org_id?: number;
   stage_id?: number;
@@ -60,11 +61,7 @@ export interface IDeal { // Data Transfer Object do Deal
 export interface IDealReturn extends IDeal {
   id: number;
   person_id: {
-    email: [
-      { value: string }
-    ],
-    phone: [
-      { value: string }
-    ]
-  }
+    email: [{ value: string }];
+    phone: [{ value: string }];
+  };
 }
